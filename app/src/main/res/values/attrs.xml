@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EditTextCustom">
+        <attr name="etOverridenTypeface" format="string" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="TextViewCustom">
+        <attr name="tvOverriddenTypeface" format="string" />
+    </declare-styleable>
+</resources>

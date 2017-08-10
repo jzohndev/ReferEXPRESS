@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Refer EXPRESS</string>
+
+    <string name="myriad_pro_semibold" tools:ignore="UnusedResources">MyriadPro-Semibold.otf</string>
+    <string name="myriad_pro_italic" tools:ignore="UnusedResources">MyriadPro-It.otf</string>
+    <string name="quatro_slab" tools:ignore="UnusedResources">QuatroSlab.otf</string>
+    <string name="quatro_slab_semibold" tools:ignore="UnusedResources">QuatroSlab-SemiBold.otf</string>
+    <string name="quatro_slab_italic" tools:ignore="UnusedResources">QuatroSlab-Italic.otf</string>
+
+    <string name="default_text_main">The Mortgage Insiders Banking Team has been handpicked to work with the
+                friends and family members you refer.  One of our highly qualified experts will
+                work with your referral to review their current financial situation and personal
+                goals to find a solution that\'s right for them.</string>
+    <string name="start_fragment_next">Let\'s get started!</string>
+    <string name="normal_next">Next</string>
+    <string name="normal_back">Back</string>
+    <string name="finish_next">Finish</string>
+    <string name="exit_next">Exit</string>
+    <string name="main_text_field_default">refer friends and family for a&#8230;</string>
+    <string name="form_start_intro">Considering a</string>
+    <string name="form_start_outro">QuickenLoans will put you in contact with your own personal Home Loan Expert!</string>
+    <string name="form_name_into_text">What do you go by?</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="form_contact_into_text">How can we reach you?</string>
+    <string name="error_phone_types">Phone numbers must be of different types</string>
+    <string name="error_phone_unique">Phone numbers must be unique</string>
+    <string name="add_email">+ email</string>
+    <string name="add_phone">+ phone</string>
+    <string name="form_location_intro_text">Where do you live?</string>
+    <string name="include_a_message">+ include a message</string>
+    <string name="include_message_additional_text">with my referral&#8230;</string>
+    <string name="form_finish_intro_text">Thank you!</string>
+    <string name="form_finish_outro_text">A Home Loan Expert will reach out to you within
+        1 business day to help get you started. We\'re eager to provide you with an amazing
+        mortgage experience!</string>
+    <string name="edit_user">Edit user</string>
+    <string name="create_user">Create user</string>
+    <string name="email_address">Email Address</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">clear</string>
+    <string name="accept">accept</string>
+    <string name="additional_title">Optional information</string>
+    <string name="edit_my_message">Edit my message...</string>
+
+
+    <string-array name="states_full">
+        <item>Select a location&#8230;</item>
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>District of Columbia</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+
+</resources>

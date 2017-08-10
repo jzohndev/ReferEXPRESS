@@ -1,0 +1,142 @@
+build
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+build/**
+*autogen/**
+*autogen
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Intellij project files
+*.iml
+
+# Eclipse project files
+.classpath
+.project
+
+# Calabash settings
+.calabash_settings
+
+.idea/vcs.xml
+
+.idea/scopes/scope_settings.xml
+
+.idea/modules.xml
+
+.idea/misc.xml
+
+.idea/libraries/google_play_services.xml
+
+.idea/libraries/android_support_v13.xml
+
+.idea/gradle.xml
+
+.idea/encodings.xml
+
+.idea/dictionaries/cpark.xml
+
+.idea/copyright/profiles_settings.xml
+
+.idea/compiler.xml
+
+.idea/.name
+
+.idea/
+
+*.so
+
+myql/libs/armeabi-v7a/libmyql_library.so
+
+myql/libs/armeabi/libmyql_library.so
+
+myql/libs/mips/libmyql_library.so
+
+myql/libs/x86/libmyql_library.so
+
+myql/obj/local/armeabi-v7a/libmyql_library.so
+
+myql/obj/local/armeabi-v7a/objs/myql_library/myql_library.o
+
+myql/obj/local/armeabi/libmyql_library.so
+
+myql/obj/local/armeabi/objs/myql_library/myql_library.o
+
+myql/obj/local/mips/libmyql_library.so
+
+myql/obj/local/mips/objs/myql_library/myql_library.o
+
+myql/obj/local/x86/libmyql_library.so
+
+myql/obj/local/x86/objs/myql_library/myql_library.o
+
+myql/obj/local/armeabi-v7a/objs/myql_library/myql_library.o.d
+
+myql/obj/local/armeabi-v7a/objs/myql_library/myql_library.o.d
+
+myql/obj/local/armeabi/objs/myql_library/myql_library.o.d
+
+myql/obj/local/mips/objs/myql_library/myql_library.o.d
+
+myql/obj/local/x86/objs/myql_library/myql_library.o.d
+
+myql/obj/local/x86/objs/myql_library/myql_library.o.d
+
+robolectric-tests/robolectric-tests.iml
+
+myql/myql.iml
+
+nonmorphable-circular-progress-button/nonmorphable-circular-progress-button.iml
+
+# Built application files
+/*/build/
+
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle generated files
+.gradle/
+
+# Signing files
+.signing/
+
+# User-specific configurations
+.idea/libraries/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+*.iml
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

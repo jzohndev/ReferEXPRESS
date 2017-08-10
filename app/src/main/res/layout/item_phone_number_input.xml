@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <com.quickenloans.referexpress.views.old.ValidationImageView
+        android:id="@+id/iv_checkmarkValidation"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_validation_yes"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_phoneNumber"
+        android:paddingTop="10dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/iv_checkmarkValidation"
+        android:layout_toStartOf="@+id/spn_phoneNumberType"
+        android:hint="Phone #"
+        android:inputType="phone"
+        android:maxLength="14"
+        android:minHeight="72dp"
+        app:met_floatingLabel="normal"
+        app:met_primaryColor="@color/primary_green"
+        app:met_singleLineEllipsis="true" />
+
+
+    <Spinner
+        android:id="@+id/spn_phoneNumberType"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/iv_deletePhone" />
+
+
+    <ImageView
+        android:id="@+id/iv_deletePhone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:alpha=".27"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="10dp"
+        android:src="@drawable/ic_remove_circle" />
+
+</RelativeLayout>

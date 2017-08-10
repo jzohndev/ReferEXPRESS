@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlayout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_green">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_parentViewDivider"
+        android:padding="95dp"
+        android:src="@drawable/refer_express_logo_v1_2" />
+
+    <View
+        android:id="@+id/view_parentViewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout_user"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/view_parentViewDivider"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_userIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_defaultUser"
+            android:padding="12dp"
+            android:src="@drawable/account_circle_black_144x144" />
+
+        <TextView
+            android:id="@+id/tv_defaultUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-black"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:text="Placeholder User"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_referText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="refer friends and family for a..."
+        android:textColor="@color/white_primary" />
+
+    <TextView
+        android:id="@+id/tv_defaultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:lineSpacingExtra="6dp"
+        android:padding="32dp"
+        android:text="@string/default_text_main"
+        android:textColor="@color/white_primary"
+        android:textSize="14sp" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_main_option_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

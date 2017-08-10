@@ -1,0 +1,196 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+        <item name="android:actionBarStyle">@style/REActionBarStyle</item>
+        <item name="android:actionBarTabTextStyle">
+            @android:style/Widget.Holo.Light.ActionBar.TabText
+        </item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:progressBarStyle">@style/ProgressBar</item>
+        <item name="android:actionBarTabStyle">@style/RETab</item>
+        <item name="android:actionBarTabBarStyle">@style/RETabBar</item>
+        <item name="android:tabWidgetStyle">@style/RETabWidget</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="EditTextForDetails" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="EditTextForDialog" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/refer_express_dark_blue</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/dark_blue</item>
+    </style>
+
+    <style name="ProgressBar" parent="@style/android:Theme.Holo">
+        <item name="android:textColor">@color/refer_express_dark_blue</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="REActionBarStyle" parent="android:Widget.Holo.Light.ActionBar">
+        <item name="android:actionButtonStyle">@color/white</item>
+        <item name="android:background">#FFFFFF</item>
+
+        <item name="android:titleTextStyle">@style/REActionBarTextStyle</item>
+    </style>
+
+    <style name="REActionBarTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="RETabWidget" parent="android:Widget.TabWidget">
+        <item name="android:dividerPadding">0dip</item>
+    </style>
+
+    <style name="RETab" parent="android:Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:minWidth">0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+    </style>
+
+
+    <style name="RETabBar" parent="android:Widget.ActionBar.TabBar">
+        <item name="android:dividerPadding">0dip</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="OverFlow">
+        <item name="android:src">@drawable/ic_action_overflow</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="btnStyleCustomDialog" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/custom_dialog_button</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+
+    <!-- Test attributes -->
+    <style name="TestAppTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="TestReferralTypeButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_round</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:layout_height">36dp</item>
+    </style>
+
+    <style name="UserSelectionDialogTheme" parent="Theme.AppBaseDialog.NoActionBar.Light.NoActionBar">
+
+    </style>
+
+    <style name="Theme.AppBaseTheme.Dialog.NoActionBar" parent="android:Theme.DeviceDefault.Dialog.NoActionBar" />
+
+    <style name="Theme.AppBaseDialog.NoActionBar.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/material_blue</item>
+        <item name="colorPrimaryDark">@color/material_blue_dark</item>
+        <item name="colorAccent">@color/material_blue</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/material_blue</item>
+    </style>
+
+    <style name="textButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="TextHeaderNormal">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black_primary</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextHeaderLarge">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/black_primary</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextBodyNormal">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black_primary</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextActionFocus">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/material_blue</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="TextActionFocusGreen">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary_green</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="TextSecondarySmall">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black_secondary</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+
+</resources>

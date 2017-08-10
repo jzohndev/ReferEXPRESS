@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_topButtons"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/primary_green">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_topLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/view_topCenterTriangle">
+
+            <Button
+                android:id="@+id/btn_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_outline_white"
+                android:minHeight="36dp"
+                android:minWidth="100dp"
+                android:text="Forward"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_selector_white_green" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_topCenterTriangle"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/triangle_divider_up_white"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_topRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/view_topCenterTriangle">
+
+            <Button
+                android:id="@+id/btn_reverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_outline_white"
+                android:minHeight="36dp"
+                android:minWidth="100dp"
+                android:text="Reverse"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_selector_white_green" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_bottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rlayout_topButtons"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_bottomLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_toStartOf="@+id/view_bottomCenterTriangle">
+
+            <Button
+                android:id="@+id/btn_purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="?attr/selectableItemBackground"
+                android:enabled="false"
+                android:fontFamily="sans-serif-medium"
+                android:text="Purchase"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_selector_dark_green"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_bottomCenterTriangle"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/triangle_divider_down_green" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_bottomRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/view_bottomCenterTriangle">
+
+            <Button
+                android:id="@+id/btn_refinance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="?attr/selectableItemBackground"
+                android:enabled="false"
+                android:fontFamily="sans-serif-medium"
+                android:text="Refinance"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_selector_dark_green"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

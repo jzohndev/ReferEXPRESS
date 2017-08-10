@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progress"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sending..."
+            android:textColor="@color/primary_green"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/primary_green" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="6dp"
+        android:alpha=".57"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <com.quickenloans.referexpress.activities.NoSwipeViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlayout_navigationControl"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iv_close" />
+
+    <!--<View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rlayout_navigationControl"
+        android:alpha=".5"
+        android:background="@android:color/black" />-->
+
+    <RelativeLayout
+        android:id="@+id/rlayout_navigationControl"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary_green"
+        android:elevation="2dp"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/textButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:text="Next"
+            android:textColor="@color/button_text_selector_white" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_pagerDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/btn_back"
+            android:layout_toStartOf="@+id/btn_next"
+            android:padding="15dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_dot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@+id/iv_dot2"
+                android:background="@drawable/dot_selected" />
+
+            <ImageView
+                android:id="@+id/iv_dot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toStartOf="@+id/v_center"
+                android:src="@drawable/dot_unselected" />
+
+            <View
+                android:id="@+id/v_center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/iv_dot3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/v_center"
+                android:src="@drawable/dot_unselected" />
+
+            <ImageView
+                android:id="@+id/iv_dot4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/iv_dot3"
+                android:src="@drawable/dot_unselected" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/textButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:text="Back"
+            android:textColor="@color/button_text_selector_white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General Colors -->
+    <color name="light_blue">#c3d3e3</color>
+    <color name="medium_blue">#449ad4</color>
+    <color name="dark_blue">#0c4569</color>
+    <color name="refer_express_dark_blue">#0F2A4C</color>
+    <color name="dark_green">#598920</color>
+
+
+    <color name="red">#b5121b</color>
+    <color name="orange">#ff7800</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Wishlist Wizard -->
+
+
+    <!-- Test Colors -->
+    <color name="ql_blue">#0f2a4c</color>
+    <color name="ql_blue_dark">#07182f</color>
+
+    <color name="material_blue">#2196F3</color>
+    <color name="material_blue_dark">#1976D2</color>
+
+
+    <color name="black_primary">#DE000000</color>   <!--DE for %87 opacity-->
+    <color name="black_secondary">#8A000000</color> <!--8A for %54 opacity-->
+    <color name="black_disabled">#61000000</color>  <!--61 for %38 opacity-->
+    <color name="white_primary">#FFFFFF</color>     <!--%100 opacity-->
+    <!--B2 for %70 opacity-->
+    <!--4C for %30 opacity-->
+
+    <color name="divider_line_grey">#FFE0E0E0</color>
+
+    <color name="primary_green">#7CB342</color>
+
+    <color name="primary_dark_green">#598920</color>
+
+</resources>
